@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Adding Java Script</title>
+        <meta name="description" content="Assignment 12 - Adding Java Script.">
+        <link rel="stylesheet" href="simple-page-styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto" rel="stylesheet">
+        <style>
+            h3 {
+                color: #424243;
+            }
+        </style>
+    </head>
+
+    <body id="top" class="home">
+        
+        <header>
+            <h1>VCT 170: Interactive / Web Design </h1>
+            <div class="banner-icon"><a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">MENU &#9776;</a></div>
+            <nav id="main">
+                <ul class="topnav" id="myTopnav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="work.html">Work</a>
+                        <ul>
+                            <li><a href="posters.html">Posters</a></li>
+                            <li><a href="magazines.html">Magazines</a></li>
+                            <li><a href="illustrations.html">Illustrations</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <img src="images/CSS3_and_HTML5_logos_and_wordmarks.png" alt="HTML5 and CSS3 logos">
+                <h2>Claire Fant, Instructor </h2>
+
+                <p>My name is Claire Fant, and I am the instructor for VCT 170 - Interactive / Web Design. I like the integration of design and technology that is the web. As visual designers we can enhance communication, make it useful, fun and purposeful. The technology of the web has become more complex, but the basics are the same. Complexity arises from building upon the basics. So we will focus on the basics.</p>
+                
+                <h3 id="html">HTML, CSS &amp; JavaScript</h3>
+
+                <p>HTML stands for hypertext markup language. HTML is what makes the web what it is. It is what allows us to jump from one document to another, regardless of their location in the world. HTML gives a meaningful structure to a site’s content so that it is accessible and understandable. Applying a meaningful structure means that the content can be ported to different platforms and retain its meaning. </p>
+
+                <p>CSS stands for Cascading Style Sheets. It controls the appearance of the basic HTML structure so that communication is enhanced.</p> 
+
+                <p>JavaScript takes care of the complex behavior of HTML and CSS by incorporating dynamic actions and animations based upon user actions.</p>
+
+                <h3 id="1990s">Late 1990s</h3>
+
+                <p>When I first learned how to lay out and build websites, we graphic designers would use mostly images and HTML tables to position content. At the time they worked well for simple layouts. However, as web use evolved and grew more complex, using tables for positioning content became unwieldy and time-consuming.  </p>
+
+                <h3 id="2000s">2000s</h3> 
+
+                <p>As hardware technology and web use continued to progress by leaps and bounds, it made sense to the web design community that utilizing web standards was the best way to accommodate future changes. The cornerstone of web standards is the separation of content and presentation. CSS was developed to be able to handle more sophisticated presentations of HTML content.</p>
+                <a href="#top">Back to top</a>
+
+                <h3 id="web2.0">Web 2.0 </h3>
+
+                <p>The main purpose of the web had always been to link documents over the internet. Over the years it has evolved from being a static purveyor of information to a platform where interactivity takes on many more forms, such as video streaming and social sharing.</p>
+
+                <p>The web is also accessed via a variety of devices such as smart phones and tablets. As a result the W3C has published recommendations for HTML5 and CSS3, which allow designers/developers to format content for presentation across multiple devices and to handle more types of content and implement greater interactivity. CSS3 is gradually taking on some tasks that used to be only accomplished with JavaScript, such as simple animations.</p>
+
+                <p>The scripting language, JavaScript (official name is ECMA Script) has a greater stake in building web applications (software in the browser). In this course we will mostly focus on the fundamental concepts of building a static website, but will touch on a little JavaScript. </p>
+</article>
+            <aside>
+                <h3 id="resources" style="font-family: 'Roboto';">Resource Websites </h3>
+
+                <p style="font-family: 'Roboto';">Below are a few resource websites that web designers and developers use to keep pace with the latest developments in the field. </p>
+                <ul>
+                    <li>
+                        <a href="https://alistapart.com" target="_blank">A List Apart</a> 
+                    </li>
+
+                    <li>
+                        <a href="https://smashingmagazine.com" target="_blank">Smashing Magazine</a>
+                    </li>
+
+                    <li>
+                        <a href="https://css-tricks.com" target="_blank">CSS Tricks </a>
+                    </li>
+                </ul>
+             </aside>
+            
+        </main>
+        <footer>
+            <p>© 2017 Claire Fant</p>
+            <p>Photography by Thomas Charters, unsplash.com</p>
+            <p><a href="mailto:cfant@shoreline.edu?subject=Contact from website">Contact Me</a></p>
+        </footer>
+        <script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+    </body>
+</html>
